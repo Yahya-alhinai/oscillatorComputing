@@ -1,0 +1,1366 @@
+
+// Verilog netlist produced by program ldbanno, Version Diamond (64-bit) 3.11.0.396.4
+
+// ldbanno -n Verilog -o OBC_impl1_mapvo.vo -w -neg -gui -msgset C:/Users/yahya/Documents/GitHub/EE4951W/verilog - PWM generator/project/promote.xml OBC_impl1_map.ncd 
+// Netlist created on Fri Feb 28 18:08:14 2020
+// Netlist written on Fri Feb 28 18:08:16 2020
+// Design is for device LCMXO1200C
+// Design is for package TQFP144
+// Design is for performance grade 3
+
+`timescale 1 ns / 1 ps
+
+module top ( signal, SPI, PMW_PIN );
+  output [11:0] signal;
+  output [2:0] SPI;
+  output [95:0] PMW_PIN;
+  wire   VCCI, GNDI_TSALL;
+
+  PMW_PIN_90_ \PMW_PIN[90]_I ( .PMWPIN90(PMW_PIN[90]));
+  signal_8_ \signal[8]_I ( .signal8(signal[8]));
+  signal_9_ \signal[9]_I ( .signal9(signal[9]));
+  signal_10_ \signal[10]_I ( .signal10(signal[10]));
+  signal_2_ \signal[2]_I ( .signal2(signal[2]));
+  PMW_PIN_95_ \PMW_PIN[95]_I ( .PMWPIN95(PMW_PIN[95]));
+  signal_3_ \signal[3]_I ( .signal3(signal[3]));
+  SPI_0_ \SPI[0]_I ( .SPI0(SPI[0]));
+  signal_4_ \signal[4]_I ( .signal4(signal[4]));
+  SPI_1_ \SPI[1]_I ( .SPI1(SPI[1]));
+  signal_5_ \signal[5]_I ( .signal5(signal[5]));
+  SPI_2_ \SPI[2]_I ( .SPI2(SPI[2]));
+  signal_6_ \signal[6]_I ( .signal6(signal[6]));
+  signal_0_ \signal[0]_I ( .signal0(signal[0]));
+  signal_7_ \signal[7]_I ( .signal7(signal[7]));
+  signal_1_ \signal[1]_I ( .signal1(signal[1]));
+  PMW_PIN_93_ \PMW_PIN[93]_I ( .PMWPIN93(PMW_PIN[93]));
+  PMW_PIN_94_ \PMW_PIN[94]_I ( .PMWPIN94(PMW_PIN[94]));
+  PMW_PIN_1_ \PMW_PIN[1]_I ( .PMWPIN1(PMW_PIN[1]));
+  PMW_PIN_0_ \PMW_PIN[0]_I ( .PMWPIN0(PMW_PIN[0]));
+  PMW_PIN_4_ \PMW_PIN[4]_I ( .PMWPIN4(PMW_PIN[4]));
+  PMW_PIN_3_ \PMW_PIN[3]_I ( .PMWPIN3(PMW_PIN[3]));
+  PMW_PIN_2_ \PMW_PIN[2]_I ( .PMWPIN2(PMW_PIN[2]));
+  PMW_PIN_7_ \PMW_PIN[7]_I ( .PMWPIN7(PMW_PIN[7]));
+  PMW_PIN_6_ \PMW_PIN[6]_I ( .PMWPIN6(PMW_PIN[6]));
+  PMW_PIN_5_ \PMW_PIN[5]_I ( .PMWPIN5(PMW_PIN[5]));
+  PMW_PIN_10_ \PMW_PIN[10]_I ( .PMWPIN10(PMW_PIN[10]));
+  PMW_PIN_9_ \PMW_PIN[9]_I ( .PMWPIN9(PMW_PIN[9]));
+  PMW_PIN_8_ \PMW_PIN[8]_I ( .PMWPIN8(PMW_PIN[8]));
+  PMW_PIN_13_ \PMW_PIN[13]_I ( .PMWPIN13(PMW_PIN[13]));
+  PMW_PIN_12_ \PMW_PIN[12]_I ( .PMWPIN12(PMW_PIN[12]));
+  PMW_PIN_11_ \PMW_PIN[11]_I ( .PMWPIN11(PMW_PIN[11]));
+  PMW_PIN_16_ \PMW_PIN[16]_I ( .PMWPIN16(PMW_PIN[16]));
+  PMW_PIN_15_ \PMW_PIN[15]_I ( .PMWPIN15(PMW_PIN[15]));
+  PMW_PIN_14_ \PMW_PIN[14]_I ( .PMWPIN14(PMW_PIN[14]));
+  PMW_PIN_19_ \PMW_PIN[19]_I ( .PMWPIN19(PMW_PIN[19]));
+  PMW_PIN_18_ \PMW_PIN[18]_I ( .PMWPIN18(PMW_PIN[18]));
+  PMW_PIN_17_ \PMW_PIN[17]_I ( .PMWPIN17(PMW_PIN[17]));
+  PMW_PIN_22_ \PMW_PIN[22]_I ( .PMWPIN22(PMW_PIN[22]));
+  PMW_PIN_21_ \PMW_PIN[21]_I ( .PMWPIN21(PMW_PIN[21]));
+  PMW_PIN_20_ \PMW_PIN[20]_I ( .PMWPIN20(PMW_PIN[20]));
+  PMW_PIN_25_ \PMW_PIN[25]_I ( .PMWPIN25(PMW_PIN[25]));
+  PMW_PIN_24_ \PMW_PIN[24]_I ( .PMWPIN24(PMW_PIN[24]));
+  PMW_PIN_23_ \PMW_PIN[23]_I ( .PMWPIN23(PMW_PIN[23]));
+  PMW_PIN_28_ \PMW_PIN[28]_I ( .PMWPIN28(PMW_PIN[28]));
+  PMW_PIN_27_ \PMW_PIN[27]_I ( .PMWPIN27(PMW_PIN[27]));
+  PMW_PIN_26_ \PMW_PIN[26]_I ( .PMWPIN26(PMW_PIN[26]));
+  PMW_PIN_31_ \PMW_PIN[31]_I ( .PMWPIN31(PMW_PIN[31]));
+  PMW_PIN_30_ \PMW_PIN[30]_I ( .PMWPIN30(PMW_PIN[30]));
+  PMW_PIN_29_ \PMW_PIN[29]_I ( .PMWPIN29(PMW_PIN[29]));
+  PMW_PIN_34_ \PMW_PIN[34]_I ( .PMWPIN34(PMW_PIN[34]));
+  PMW_PIN_33_ \PMW_PIN[33]_I ( .PMWPIN33(PMW_PIN[33]));
+  PMW_PIN_32_ \PMW_PIN[32]_I ( .PMWPIN32(PMW_PIN[32]));
+  PMW_PIN_37_ \PMW_PIN[37]_I ( .PMWPIN37(PMW_PIN[37]));
+  PMW_PIN_36_ \PMW_PIN[36]_I ( .PMWPIN36(PMW_PIN[36]));
+  PMW_PIN_35_ \PMW_PIN[35]_I ( .PMWPIN35(PMW_PIN[35]));
+  PMW_PIN_40_ \PMW_PIN[40]_I ( .PMWPIN40(PMW_PIN[40]));
+  PMW_PIN_39_ \PMW_PIN[39]_I ( .PMWPIN39(PMW_PIN[39]));
+  PMW_PIN_38_ \PMW_PIN[38]_I ( .PMWPIN38(PMW_PIN[38]));
+  PMW_PIN_43_ \PMW_PIN[43]_I ( .PMWPIN43(PMW_PIN[43]));
+  PMW_PIN_42_ \PMW_PIN[42]_I ( .PMWPIN42(PMW_PIN[42]));
+  PMW_PIN_41_ \PMW_PIN[41]_I ( .PMWPIN41(PMW_PIN[41]));
+  PMW_PIN_46_ \PMW_PIN[46]_I ( .PMWPIN46(PMW_PIN[46]));
+  PMW_PIN_45_ \PMW_PIN[45]_I ( .PMWPIN45(PMW_PIN[45]));
+  PMW_PIN_44_ \PMW_PIN[44]_I ( .PMWPIN44(PMW_PIN[44]));
+  PMW_PIN_49_ \PMW_PIN[49]_I ( .PMWPIN49(PMW_PIN[49]));
+  PMW_PIN_48_ \PMW_PIN[48]_I ( .PMWPIN48(PMW_PIN[48]));
+  PMW_PIN_47_ \PMW_PIN[47]_I ( .PMWPIN47(PMW_PIN[47]));
+  PMW_PIN_52_ \PMW_PIN[52]_I ( .PMWPIN52(PMW_PIN[52]));
+  PMW_PIN_51_ \PMW_PIN[51]_I ( .PMWPIN51(PMW_PIN[51]));
+  PMW_PIN_50_ \PMW_PIN[50]_I ( .PMWPIN50(PMW_PIN[50]));
+  PMW_PIN_55_ \PMW_PIN[55]_I ( .PMWPIN55(PMW_PIN[55]));
+  PMW_PIN_54_ \PMW_PIN[54]_I ( .PMWPIN54(PMW_PIN[54]));
+  PMW_PIN_53_ \PMW_PIN[53]_I ( .PMWPIN53(PMW_PIN[53]));
+  PMW_PIN_58_ \PMW_PIN[58]_I ( .PMWPIN58(PMW_PIN[58]));
+  PMW_PIN_57_ \PMW_PIN[57]_I ( .PMWPIN57(PMW_PIN[57]));
+  PMW_PIN_56_ \PMW_PIN[56]_I ( .PMWPIN56(PMW_PIN[56]));
+  PMW_PIN_61_ \PMW_PIN[61]_I ( .PMWPIN61(PMW_PIN[61]));
+  PMW_PIN_60_ \PMW_PIN[60]_I ( .PMWPIN60(PMW_PIN[60]));
+  PMW_PIN_59_ \PMW_PIN[59]_I ( .PMWPIN59(PMW_PIN[59]));
+  PMW_PIN_64_ \PMW_PIN[64]_I ( .PMWPIN64(PMW_PIN[64]));
+  PMW_PIN_63_ \PMW_PIN[63]_I ( .PMWPIN63(PMW_PIN[63]));
+  PMW_PIN_62_ \PMW_PIN[62]_I ( .PMWPIN62(PMW_PIN[62]));
+  PMW_PIN_67_ \PMW_PIN[67]_I ( .PMWPIN67(PMW_PIN[67]));
+  PMW_PIN_66_ \PMW_PIN[66]_I ( .PMWPIN66(PMW_PIN[66]));
+  PMW_PIN_65_ \PMW_PIN[65]_I ( .PMWPIN65(PMW_PIN[65]));
+  PMW_PIN_70_ \PMW_PIN[70]_I ( .PMWPIN70(PMW_PIN[70]));
+  PMW_PIN_69_ \PMW_PIN[69]_I ( .PMWPIN69(PMW_PIN[69]));
+  PMW_PIN_68_ \PMW_PIN[68]_I ( .PMWPIN68(PMW_PIN[68]));
+  PMW_PIN_73_ \PMW_PIN[73]_I ( .PMWPIN73(PMW_PIN[73]));
+  PMW_PIN_72_ \PMW_PIN[72]_I ( .PMWPIN72(PMW_PIN[72]));
+  PMW_PIN_71_ \PMW_PIN[71]_I ( .PMWPIN71(PMW_PIN[71]));
+  PMW_PIN_76_ \PMW_PIN[76]_I ( .PMWPIN76(PMW_PIN[76]));
+  PMW_PIN_75_ \PMW_PIN[75]_I ( .PMWPIN75(PMW_PIN[75]));
+  PMW_PIN_74_ \PMW_PIN[74]_I ( .PMWPIN74(PMW_PIN[74]));
+  PMW_PIN_79_ \PMW_PIN[79]_I ( .PMWPIN79(PMW_PIN[79]));
+  PMW_PIN_78_ \PMW_PIN[78]_I ( .PMWPIN78(PMW_PIN[78]));
+  PMW_PIN_77_ \PMW_PIN[77]_I ( .PMWPIN77(PMW_PIN[77]));
+  PMW_PIN_82_ \PMW_PIN[82]_I ( .PMWPIN82(PMW_PIN[82]));
+  PMW_PIN_81_ \PMW_PIN[81]_I ( .PMWPIN81(PMW_PIN[81]));
+  PMW_PIN_80_ \PMW_PIN[80]_I ( .PMWPIN80(PMW_PIN[80]));
+  PMW_PIN_85_ \PMW_PIN[85]_I ( .PMWPIN85(PMW_PIN[85]));
+  PMW_PIN_84_ \PMW_PIN[84]_I ( .PMWPIN84(PMW_PIN[84]));
+  PMW_PIN_83_ \PMW_PIN[83]_I ( .PMWPIN83(PMW_PIN[83]));
+  PMW_PIN_91_ \PMW_PIN[91]_I ( .PMWPIN91(PMW_PIN[91]));
+  PMW_PIN_92_ \PMW_PIN[92]_I ( .PMWPIN92(PMW_PIN[92]));
+  signal_11_ \signal[11]_I ( .signal11(signal[11]));
+  PMW_PIN_89_ \PMW_PIN[89]_I ( .PMWPIN89(PMW_PIN[89]));
+  PMW_PIN_88_ \PMW_PIN[88]_I ( .PMWPIN88(PMW_PIN[88]));
+  PMW_PIN_87_ \PMW_PIN[87]_I ( .PMWPIN87(PMW_PIN[87]));
+  PMW_PIN_86_ \PMW_PIN[86]_I ( .PMWPIN86(PMW_PIN[86]));
+  VHI VHI_INST( .Z(VCCI));
+  PUR PUR_INST( .PUR(VCCI));
+  GSR GSR_INST( .GSR(VCCI));
+  VLO VLO_INST( .Z(GNDI_TSALL));
+  TSALL TSALL_INST( .TSALL(GNDI_TSALL));
+endmodule
+
+module PMW_PIN_90_ ( output PMWPIN90 );
+  wire   GNDI;
+
+  mjeiobuf PMW_PIN_pad_90( .I(GNDI), .T(GNDI), .PAD(PMWPIN90));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+  endspecify
+
+endmodule
+
+module mjeiobuf ( input I, T, output PAD );
+
+  OBZPU INST5( .I(I), .T(T), .O(PAD));
+endmodule
+
+module gnd ( output PWR0 );
+
+  VLO INST1( .Z(PWR0));
+endmodule
+
+module signal_8_ ( output signal8 );
+  wire   GNDI;
+
+  mjeiobuf signal_pad_8( .I(GNDI), .T(GNDI), .PAD(signal8));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+  endspecify
+
+endmodule
+
+module signal_9_ ( output signal9 );
+  wire   GNDI;
+
+  mjeiobuf signal_pad_9( .I(GNDI), .T(GNDI), .PAD(signal9));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+  endspecify
+
+endmodule
+
+module signal_10_ ( output signal10 );
+  wire   GNDI;
+
+  mjeiobuf signal_pad_10( .I(GNDI), .T(GNDI), .PAD(signal10));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+  endspecify
+
+endmodule
+
+module signal_2_ ( output signal2 );
+  wire   GNDI;
+
+  mjeiobuf signal_pad_2( .I(GNDI), .T(GNDI), .PAD(signal2));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+  endspecify
+
+endmodule
+
+module PMW_PIN_95_ ( output PMWPIN95 );
+  wire   GNDI;
+
+  mjeiobuf PMW_PIN_pad_95( .I(GNDI), .T(GNDI), .PAD(PMWPIN95));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+  endspecify
+
+endmodule
+
+module signal_3_ ( output signal3 );
+  wire   GNDI;
+
+  mjeiobuf signal_pad_3( .I(GNDI), .T(GNDI), .PAD(signal3));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+  endspecify
+
+endmodule
+
+module SPI_0_ ( output SPI0 );
+  wire   GNDI;
+
+  mjeiobuf SPI_pad_0( .I(GNDI), .T(GNDI), .PAD(SPI0));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+  endspecify
+
+endmodule
+
+module signal_4_ ( output signal4 );
+  wire   GNDI;
+
+  mjeiobuf signal_pad_4( .I(GNDI), .T(GNDI), .PAD(signal4));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+  endspecify
+
+endmodule
+
+module SPI_1_ ( output SPI1 );
+  wire   GNDI;
+
+  mjeiobuf SPI_pad_1( .I(GNDI), .T(GNDI), .PAD(SPI1));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+  endspecify
+
+endmodule
+
+module signal_5_ ( output signal5 );
+  wire   GNDI;
+
+  mjeiobuf signal_pad_5( .I(GNDI), .T(GNDI), .PAD(signal5));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+  endspecify
+
+endmodule
+
+module SPI_2_ ( output SPI2 );
+  wire   GNDI;
+
+  mjeiobuf SPI_pad_2( .I(GNDI), .T(GNDI), .PAD(SPI2));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+  endspecify
+
+endmodule
+
+module signal_6_ ( output signal6 );
+  wire   GNDI;
+
+  mjeiobuf signal_pad_6( .I(GNDI), .T(GNDI), .PAD(signal6));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+  endspecify
+
+endmodule
+
+module signal_0_ ( output signal0 );
+  wire   GNDI;
+
+  mjeiobuf signal_pad_0( .I(GNDI), .T(GNDI), .PAD(signal0));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+  endspecify
+
+endmodule
+
+module signal_7_ ( output signal7 );
+  wire   GNDI;
+
+  mjeiobuf signal_pad_7( .I(GNDI), .T(GNDI), .PAD(signal7));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+  endspecify
+
+endmodule
+
+module signal_1_ ( output signal1 );
+  wire   GNDI;
+
+  mjeiobuf signal_pad_1( .I(GNDI), .T(GNDI), .PAD(signal1));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+  endspecify
+
+endmodule
+
+module PMW_PIN_93_ ( output PMWPIN93 );
+  wire   GNDI;
+
+  mjeiobuf PMW_PIN_pad_93( .I(GNDI), .T(GNDI), .PAD(PMWPIN93));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+  endspecify
+
+endmodule
+
+module PMW_PIN_94_ ( output PMWPIN94 );
+  wire   GNDI;
+
+  mjeiobuf PMW_PIN_pad_94( .I(GNDI), .T(GNDI), .PAD(PMWPIN94));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+  endspecify
+
+endmodule
+
+module PMW_PIN_1_ ( output PMWPIN1 );
+  wire   GNDI;
+
+  mjeiobuf PMW_PIN_pad_1( .I(GNDI), .T(GNDI), .PAD(PMWPIN1));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+  endspecify
+
+endmodule
+
+module PMW_PIN_0_ ( output PMWPIN0 );
+  wire   GNDI;
+
+  mjeiobuf PMW_PIN_pad_0( .I(GNDI), .T(GNDI), .PAD(PMWPIN0));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+  endspecify
+
+endmodule
+
+module PMW_PIN_4_ ( output PMWPIN4 );
+  wire   GNDI;
+
+  mjeiobuf PMW_PIN_pad_4( .I(GNDI), .T(GNDI), .PAD(PMWPIN4));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+  endspecify
+
+endmodule
+
+module PMW_PIN_3_ ( output PMWPIN3 );
+  wire   GNDI;
+
+  mjeiobuf PMW_PIN_pad_3( .I(GNDI), .T(GNDI), .PAD(PMWPIN3));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+  endspecify
+
+endmodule
+
+module PMW_PIN_2_ ( output PMWPIN2 );
+  wire   GNDI;
+
+  mjeiobuf PMW_PIN_pad_2( .I(GNDI), .T(GNDI), .PAD(PMWPIN2));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+  endspecify
+
+endmodule
+
+module PMW_PIN_7_ ( output PMWPIN7 );
+  wire   GNDI;
+
+  mjeiobuf PMW_PIN_pad_7( .I(GNDI), .T(GNDI), .PAD(PMWPIN7));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+  endspecify
+
+endmodule
+
+module PMW_PIN_6_ ( output PMWPIN6 );
+  wire   GNDI;
+
+  mjeiobuf PMW_PIN_pad_6( .I(GNDI), .T(GNDI), .PAD(PMWPIN6));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+  endspecify
+
+endmodule
+
+module PMW_PIN_5_ ( output PMWPIN5 );
+  wire   GNDI;
+
+  mjeiobuf PMW_PIN_pad_5( .I(GNDI), .T(GNDI), .PAD(PMWPIN5));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+  endspecify
+
+endmodule
+
+module PMW_PIN_10_ ( output PMWPIN10 );
+  wire   GNDI;
+
+  mjeiobuf PMW_PIN_pad_10( .I(GNDI), .T(GNDI), .PAD(PMWPIN10));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+  endspecify
+
+endmodule
+
+module PMW_PIN_9_ ( output PMWPIN9 );
+  wire   GNDI;
+
+  mjeiobuf PMW_PIN_pad_9( .I(GNDI), .T(GNDI), .PAD(PMWPIN9));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+  endspecify
+
+endmodule
+
+module PMW_PIN_8_ ( output PMWPIN8 );
+  wire   GNDI;
+
+  mjeiobuf PMW_PIN_pad_8( .I(GNDI), .T(GNDI), .PAD(PMWPIN8));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+  endspecify
+
+endmodule
+
+module PMW_PIN_13_ ( output PMWPIN13 );
+  wire   GNDI;
+
+  mjeiobuf PMW_PIN_pad_13( .I(GNDI), .T(GNDI), .PAD(PMWPIN13));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+  endspecify
+
+endmodule
+
+module PMW_PIN_12_ ( output PMWPIN12 );
+  wire   GNDI;
+
+  mjeiobuf PMW_PIN_pad_12( .I(GNDI), .T(GNDI), .PAD(PMWPIN12));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+  endspecify
+
+endmodule
+
+module PMW_PIN_11_ ( output PMWPIN11 );
+  wire   GNDI;
+
+  mjeiobuf PMW_PIN_pad_11( .I(GNDI), .T(GNDI), .PAD(PMWPIN11));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+  endspecify
+
+endmodule
+
+module PMW_PIN_16_ ( output PMWPIN16 );
+  wire   GNDI;
+
+  mjeiobuf PMW_PIN_pad_16( .I(GNDI), .T(GNDI), .PAD(PMWPIN16));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+  endspecify
+
+endmodule
+
+module PMW_PIN_15_ ( output PMWPIN15 );
+  wire   GNDI;
+
+  mjeiobuf PMW_PIN_pad_15( .I(GNDI), .T(GNDI), .PAD(PMWPIN15));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+  endspecify
+
+endmodule
+
+module PMW_PIN_14_ ( output PMWPIN14 );
+  wire   GNDI;
+
+  mjeiobuf PMW_PIN_pad_14( .I(GNDI), .T(GNDI), .PAD(PMWPIN14));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+  endspecify
+
+endmodule
+
+module PMW_PIN_19_ ( output PMWPIN19 );
+  wire   GNDI;
+
+  mjeiobuf PMW_PIN_pad_19( .I(GNDI), .T(GNDI), .PAD(PMWPIN19));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+  endspecify
+
+endmodule
+
+module PMW_PIN_18_ ( output PMWPIN18 );
+  wire   GNDI;
+
+  mjeiobuf PMW_PIN_pad_18( .I(GNDI), .T(GNDI), .PAD(PMWPIN18));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+  endspecify
+
+endmodule
+
+module PMW_PIN_17_ ( output PMWPIN17 );
+  wire   GNDI;
+
+  mjeiobuf PMW_PIN_pad_17( .I(GNDI), .T(GNDI), .PAD(PMWPIN17));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+  endspecify
+
+endmodule
+
+module PMW_PIN_22_ ( output PMWPIN22 );
+  wire   GNDI;
+
+  mjeiobuf PMW_PIN_pad_22( .I(GNDI), .T(GNDI), .PAD(PMWPIN22));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+  endspecify
+
+endmodule
+
+module PMW_PIN_21_ ( output PMWPIN21 );
+  wire   GNDI;
+
+  mjeiobuf PMW_PIN_pad_21( .I(GNDI), .T(GNDI), .PAD(PMWPIN21));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+  endspecify
+
+endmodule
+
+module PMW_PIN_20_ ( output PMWPIN20 );
+  wire   GNDI;
+
+  mjeiobuf PMW_PIN_pad_20( .I(GNDI), .T(GNDI), .PAD(PMWPIN20));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+  endspecify
+
+endmodule
+
+module PMW_PIN_25_ ( output PMWPIN25 );
+  wire   GNDI;
+
+  mjeiobuf PMW_PIN_pad_25( .I(GNDI), .T(GNDI), .PAD(PMWPIN25));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+  endspecify
+
+endmodule
+
+module PMW_PIN_24_ ( output PMWPIN24 );
+  wire   GNDI;
+
+  mjeiobuf PMW_PIN_pad_24( .I(GNDI), .T(GNDI), .PAD(PMWPIN24));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+  endspecify
+
+endmodule
+
+module PMW_PIN_23_ ( output PMWPIN23 );
+  wire   GNDI;
+
+  mjeiobuf PMW_PIN_pad_23( .I(GNDI), .T(GNDI), .PAD(PMWPIN23));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+  endspecify
+
+endmodule
+
+module PMW_PIN_28_ ( output PMWPIN28 );
+  wire   GNDI;
+
+  mjeiobuf PMW_PIN_pad_28( .I(GNDI), .T(GNDI), .PAD(PMWPIN28));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+  endspecify
+
+endmodule
+
+module PMW_PIN_27_ ( output PMWPIN27 );
+  wire   GNDI;
+
+  mjeiobuf PMW_PIN_pad_27( .I(GNDI), .T(GNDI), .PAD(PMWPIN27));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+  endspecify
+
+endmodule
+
+module PMW_PIN_26_ ( output PMWPIN26 );
+  wire   GNDI;
+
+  mjeiobuf PMW_PIN_pad_26( .I(GNDI), .T(GNDI), .PAD(PMWPIN26));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+  endspecify
+
+endmodule
+
+module PMW_PIN_31_ ( output PMWPIN31 );
+  wire   GNDI;
+
+  mjeiobuf PMW_PIN_pad_31( .I(GNDI), .T(GNDI), .PAD(PMWPIN31));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+  endspecify
+
+endmodule
+
+module PMW_PIN_30_ ( output PMWPIN30 );
+  wire   GNDI;
+
+  mjeiobuf PMW_PIN_pad_30( .I(GNDI), .T(GNDI), .PAD(PMWPIN30));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+  endspecify
+
+endmodule
+
+module PMW_PIN_29_ ( output PMWPIN29 );
+  wire   GNDI;
+
+  mjeiobuf PMW_PIN_pad_29( .I(GNDI), .T(GNDI), .PAD(PMWPIN29));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+  endspecify
+
+endmodule
+
+module PMW_PIN_34_ ( output PMWPIN34 );
+  wire   GNDI;
+
+  mjeiobuf PMW_PIN_pad_34( .I(GNDI), .T(GNDI), .PAD(PMWPIN34));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+  endspecify
+
+endmodule
+
+module PMW_PIN_33_ ( output PMWPIN33 );
+  wire   GNDI;
+
+  mjeiobuf PMW_PIN_pad_33( .I(GNDI), .T(GNDI), .PAD(PMWPIN33));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+  endspecify
+
+endmodule
+
+module PMW_PIN_32_ ( output PMWPIN32 );
+  wire   GNDI;
+
+  mjeiobuf PMW_PIN_pad_32( .I(GNDI), .T(GNDI), .PAD(PMWPIN32));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+  endspecify
+
+endmodule
+
+module PMW_PIN_37_ ( output PMWPIN37 );
+  wire   GNDI;
+
+  mjeiobuf PMW_PIN_pad_37( .I(GNDI), .T(GNDI), .PAD(PMWPIN37));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+  endspecify
+
+endmodule
+
+module PMW_PIN_36_ ( output PMWPIN36 );
+  wire   GNDI;
+
+  mjeiobuf PMW_PIN_pad_36( .I(GNDI), .T(GNDI), .PAD(PMWPIN36));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+  endspecify
+
+endmodule
+
+module PMW_PIN_35_ ( output PMWPIN35 );
+  wire   GNDI;
+
+  mjeiobuf PMW_PIN_pad_35( .I(GNDI), .T(GNDI), .PAD(PMWPIN35));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+  endspecify
+
+endmodule
+
+module PMW_PIN_40_ ( output PMWPIN40 );
+  wire   GNDI;
+
+  mjeiobuf PMW_PIN_pad_40( .I(GNDI), .T(GNDI), .PAD(PMWPIN40));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+  endspecify
+
+endmodule
+
+module PMW_PIN_39_ ( output PMWPIN39 );
+  wire   GNDI;
+
+  mjeiobuf PMW_PIN_pad_39( .I(GNDI), .T(GNDI), .PAD(PMWPIN39));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+  endspecify
+
+endmodule
+
+module PMW_PIN_38_ ( output PMWPIN38 );
+  wire   GNDI;
+
+  mjeiobuf PMW_PIN_pad_38( .I(GNDI), .T(GNDI), .PAD(PMWPIN38));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+  endspecify
+
+endmodule
+
+module PMW_PIN_43_ ( output PMWPIN43 );
+  wire   GNDI;
+
+  mjeiobuf PMW_PIN_pad_43( .I(GNDI), .T(GNDI), .PAD(PMWPIN43));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+  endspecify
+
+endmodule
+
+module PMW_PIN_42_ ( output PMWPIN42 );
+  wire   GNDI;
+
+  mjeiobuf PMW_PIN_pad_42( .I(GNDI), .T(GNDI), .PAD(PMWPIN42));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+  endspecify
+
+endmodule
+
+module PMW_PIN_41_ ( output PMWPIN41 );
+  wire   GNDI;
+
+  mjeiobuf PMW_PIN_pad_41( .I(GNDI), .T(GNDI), .PAD(PMWPIN41));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+  endspecify
+
+endmodule
+
+module PMW_PIN_46_ ( output PMWPIN46 );
+  wire   GNDI;
+
+  mjeiobuf PMW_PIN_pad_46( .I(GNDI), .T(GNDI), .PAD(PMWPIN46));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+  endspecify
+
+endmodule
+
+module PMW_PIN_45_ ( output PMWPIN45 );
+  wire   GNDI;
+
+  mjeiobuf PMW_PIN_pad_45( .I(GNDI), .T(GNDI), .PAD(PMWPIN45));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+  endspecify
+
+endmodule
+
+module PMW_PIN_44_ ( output PMWPIN44 );
+  wire   GNDI;
+
+  mjeiobuf PMW_PIN_pad_44( .I(GNDI), .T(GNDI), .PAD(PMWPIN44));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+  endspecify
+
+endmodule
+
+module PMW_PIN_49_ ( output PMWPIN49 );
+  wire   GNDI;
+
+  mjeiobuf PMW_PIN_pad_49( .I(GNDI), .T(GNDI), .PAD(PMWPIN49));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+  endspecify
+
+endmodule
+
+module PMW_PIN_48_ ( output PMWPIN48 );
+  wire   GNDI;
+
+  mjeiobuf PMW_PIN_pad_48( .I(GNDI), .T(GNDI), .PAD(PMWPIN48));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+  endspecify
+
+endmodule
+
+module PMW_PIN_47_ ( output PMWPIN47 );
+  wire   GNDI;
+
+  mjeiobuf PMW_PIN_pad_47( .I(GNDI), .T(GNDI), .PAD(PMWPIN47));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+  endspecify
+
+endmodule
+
+module PMW_PIN_52_ ( output PMWPIN52 );
+  wire   GNDI;
+
+  mjeiobuf PMW_PIN_pad_52( .I(GNDI), .T(GNDI), .PAD(PMWPIN52));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+  endspecify
+
+endmodule
+
+module PMW_PIN_51_ ( output PMWPIN51 );
+  wire   GNDI;
+
+  mjeiobuf PMW_PIN_pad_51( .I(GNDI), .T(GNDI), .PAD(PMWPIN51));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+  endspecify
+
+endmodule
+
+module PMW_PIN_50_ ( output PMWPIN50 );
+  wire   GNDI;
+
+  mjeiobuf PMW_PIN_pad_50( .I(GNDI), .T(GNDI), .PAD(PMWPIN50));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+  endspecify
+
+endmodule
+
+module PMW_PIN_55_ ( output PMWPIN55 );
+  wire   GNDI;
+
+  mjeiobuf PMW_PIN_pad_55( .I(GNDI), .T(GNDI), .PAD(PMWPIN55));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+  endspecify
+
+endmodule
+
+module PMW_PIN_54_ ( output PMWPIN54 );
+  wire   GNDI;
+
+  mjeiobuf PMW_PIN_pad_54( .I(GNDI), .T(GNDI), .PAD(PMWPIN54));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+  endspecify
+
+endmodule
+
+module PMW_PIN_53_ ( output PMWPIN53 );
+  wire   GNDI;
+
+  mjeiobuf PMW_PIN_pad_53( .I(GNDI), .T(GNDI), .PAD(PMWPIN53));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+  endspecify
+
+endmodule
+
+module PMW_PIN_58_ ( output PMWPIN58 );
+  wire   GNDI;
+
+  mjeiobuf PMW_PIN_pad_58( .I(GNDI), .T(GNDI), .PAD(PMWPIN58));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+  endspecify
+
+endmodule
+
+module PMW_PIN_57_ ( output PMWPIN57 );
+  wire   GNDI;
+
+  mjeiobuf PMW_PIN_pad_57( .I(GNDI), .T(GNDI), .PAD(PMWPIN57));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+  endspecify
+
+endmodule
+
+module PMW_PIN_56_ ( output PMWPIN56 );
+  wire   GNDI;
+
+  mjeiobuf PMW_PIN_pad_56( .I(GNDI), .T(GNDI), .PAD(PMWPIN56));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+  endspecify
+
+endmodule
+
+module PMW_PIN_61_ ( output PMWPIN61 );
+  wire   GNDI;
+
+  mjeiobuf PMW_PIN_pad_61( .I(GNDI), .T(GNDI), .PAD(PMWPIN61));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+  endspecify
+
+endmodule
+
+module PMW_PIN_60_ ( output PMWPIN60 );
+  wire   GNDI;
+
+  mjeiobuf PMW_PIN_pad_60( .I(GNDI), .T(GNDI), .PAD(PMWPIN60));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+  endspecify
+
+endmodule
+
+module PMW_PIN_59_ ( output PMWPIN59 );
+  wire   GNDI;
+
+  mjeiobuf PMW_PIN_pad_59( .I(GNDI), .T(GNDI), .PAD(PMWPIN59));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+  endspecify
+
+endmodule
+
+module PMW_PIN_64_ ( output PMWPIN64 );
+  wire   GNDI;
+
+  mjeiobuf PMW_PIN_pad_64( .I(GNDI), .T(GNDI), .PAD(PMWPIN64));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+  endspecify
+
+endmodule
+
+module PMW_PIN_63_ ( output PMWPIN63 );
+  wire   GNDI;
+
+  mjeiobuf PMW_PIN_pad_63( .I(GNDI), .T(GNDI), .PAD(PMWPIN63));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+  endspecify
+
+endmodule
+
+module PMW_PIN_62_ ( output PMWPIN62 );
+  wire   GNDI;
+
+  mjeiobuf PMW_PIN_pad_62( .I(GNDI), .T(GNDI), .PAD(PMWPIN62));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+  endspecify
+
+endmodule
+
+module PMW_PIN_67_ ( output PMWPIN67 );
+  wire   GNDI;
+
+  mjeiobuf PMW_PIN_pad_67( .I(GNDI), .T(GNDI), .PAD(PMWPIN67));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+  endspecify
+
+endmodule
+
+module PMW_PIN_66_ ( output PMWPIN66 );
+  wire   GNDI;
+
+  mjeiobuf PMW_PIN_pad_66( .I(GNDI), .T(GNDI), .PAD(PMWPIN66));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+  endspecify
+
+endmodule
+
+module PMW_PIN_65_ ( output PMWPIN65 );
+  wire   GNDI;
+
+  mjeiobuf PMW_PIN_pad_65( .I(GNDI), .T(GNDI), .PAD(PMWPIN65));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+  endspecify
+
+endmodule
+
+module PMW_PIN_70_ ( output PMWPIN70 );
+  wire   GNDI;
+
+  mjeiobuf PMW_PIN_pad_70( .I(GNDI), .T(GNDI), .PAD(PMWPIN70));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+  endspecify
+
+endmodule
+
+module PMW_PIN_69_ ( output PMWPIN69 );
+  wire   GNDI;
+
+  mjeiobuf PMW_PIN_pad_69( .I(GNDI), .T(GNDI), .PAD(PMWPIN69));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+  endspecify
+
+endmodule
+
+module PMW_PIN_68_ ( output PMWPIN68 );
+  wire   GNDI;
+
+  mjeiobuf PMW_PIN_pad_68( .I(GNDI), .T(GNDI), .PAD(PMWPIN68));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+  endspecify
+
+endmodule
+
+module PMW_PIN_73_ ( output PMWPIN73 );
+  wire   GNDI;
+
+  mjeiobuf PMW_PIN_pad_73( .I(GNDI), .T(GNDI), .PAD(PMWPIN73));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+  endspecify
+
+endmodule
+
+module PMW_PIN_72_ ( output PMWPIN72 );
+  wire   GNDI;
+
+  mjeiobuf PMW_PIN_pad_72( .I(GNDI), .T(GNDI), .PAD(PMWPIN72));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+  endspecify
+
+endmodule
+
+module PMW_PIN_71_ ( output PMWPIN71 );
+  wire   GNDI;
+
+  mjeiobuf PMW_PIN_pad_71( .I(GNDI), .T(GNDI), .PAD(PMWPIN71));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+  endspecify
+
+endmodule
+
+module PMW_PIN_76_ ( output PMWPIN76 );
+  wire   GNDI;
+
+  mjeiobuf PMW_PIN_pad_76( .I(GNDI), .T(GNDI), .PAD(PMWPIN76));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+  endspecify
+
+endmodule
+
+module PMW_PIN_75_ ( output PMWPIN75 );
+  wire   GNDI;
+
+  mjeiobuf PMW_PIN_pad_75( .I(GNDI), .T(GNDI), .PAD(PMWPIN75));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+  endspecify
+
+endmodule
+
+module PMW_PIN_74_ ( output PMWPIN74 );
+  wire   GNDI;
+
+  mjeiobuf PMW_PIN_pad_74( .I(GNDI), .T(GNDI), .PAD(PMWPIN74));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+  endspecify
+
+endmodule
+
+module PMW_PIN_79_ ( output PMWPIN79 );
+  wire   GNDI;
+
+  mjeiobuf PMW_PIN_pad_79( .I(GNDI), .T(GNDI), .PAD(PMWPIN79));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+  endspecify
+
+endmodule
+
+module PMW_PIN_78_ ( output PMWPIN78 );
+  wire   GNDI;
+
+  mjeiobuf PMW_PIN_pad_78( .I(GNDI), .T(GNDI), .PAD(PMWPIN78));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+  endspecify
+
+endmodule
+
+module PMW_PIN_77_ ( output PMWPIN77 );
+  wire   GNDI;
+
+  mjeiobuf PMW_PIN_pad_77( .I(GNDI), .T(GNDI), .PAD(PMWPIN77));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+  endspecify
+
+endmodule
+
+module PMW_PIN_82_ ( output PMWPIN82 );
+  wire   GNDI;
+
+  mjeiobuf PMW_PIN_pad_82( .I(GNDI), .T(GNDI), .PAD(PMWPIN82));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+  endspecify
+
+endmodule
+
+module PMW_PIN_81_ ( output PMWPIN81 );
+  wire   GNDI;
+
+  mjeiobuf PMW_PIN_pad_81( .I(GNDI), .T(GNDI), .PAD(PMWPIN81));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+  endspecify
+
+endmodule
+
+module PMW_PIN_80_ ( output PMWPIN80 );
+  wire   GNDI;
+
+  mjeiobuf PMW_PIN_pad_80( .I(GNDI), .T(GNDI), .PAD(PMWPIN80));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+  endspecify
+
+endmodule
+
+module PMW_PIN_85_ ( output PMWPIN85 );
+  wire   GNDI;
+
+  mjeiobuf PMW_PIN_pad_85( .I(GNDI), .T(GNDI), .PAD(PMWPIN85));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+  endspecify
+
+endmodule
+
+module PMW_PIN_84_ ( output PMWPIN84 );
+  wire   GNDI;
+
+  mjeiobuf PMW_PIN_pad_84( .I(GNDI), .T(GNDI), .PAD(PMWPIN84));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+  endspecify
+
+endmodule
+
+module PMW_PIN_83_ ( output PMWPIN83 );
+  wire   GNDI;
+
+  mjeiobuf PMW_PIN_pad_83( .I(GNDI), .T(GNDI), .PAD(PMWPIN83));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+  endspecify
+
+endmodule
+
+module PMW_PIN_91_ ( output PMWPIN91 );
+  wire   GNDI;
+
+  mjeiobuf PMW_PIN_pad_91( .I(GNDI), .T(GNDI), .PAD(PMWPIN91));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+  endspecify
+
+endmodule
+
+module PMW_PIN_92_ ( output PMWPIN92 );
+  wire   GNDI;
+
+  mjeiobuf PMW_PIN_pad_92( .I(GNDI), .T(GNDI), .PAD(PMWPIN92));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+  endspecify
+
+endmodule
+
+module signal_11_ ( output signal11 );
+  wire   GNDI;
+
+  mjeiobuf signal_pad_11( .I(GNDI), .T(GNDI), .PAD(signal11));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+  endspecify
+
+endmodule
+
+module PMW_PIN_89_ ( output PMWPIN89 );
+  wire   GNDI;
+
+  mjeiobuf PMW_PIN_pad_89( .I(GNDI), .T(GNDI), .PAD(PMWPIN89));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+  endspecify
+
+endmodule
+
+module PMW_PIN_88_ ( output PMWPIN88 );
+  wire   GNDI;
+
+  mjeiobuf PMW_PIN_pad_88( .I(GNDI), .T(GNDI), .PAD(PMWPIN88));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+  endspecify
+
+endmodule
+
+module PMW_PIN_87_ ( output PMWPIN87 );
+  wire   GNDI;
+
+  mjeiobuf PMW_PIN_pad_87( .I(GNDI), .T(GNDI), .PAD(PMWPIN87));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+  endspecify
+
+endmodule
+
+module PMW_PIN_86_ ( output PMWPIN86 );
+  wire   GNDI;
+
+  mjeiobuf PMW_PIN_pad_86( .I(GNDI), .T(GNDI), .PAD(PMWPIN86));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+  endspecify
+
+endmodule

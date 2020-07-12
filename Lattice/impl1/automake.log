@@ -1,0 +1,284 @@
+
+synthesis -f "OBC_impl1_lattice.synproj"
+synthesis:  version Diamond (64-bit) 3.11.0.396.4
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2019 Lattice Semiconductor Corporation,  All rights reserved.
+Fri Feb 28 18:21:46 2020
+
+
+Command Line:  synthesis -f OBC_impl1_lattice.synproj -gui -msgset C:/Users/yahya/Documents/GitHub/EE4951W/verilog - PWM generator/project/promote.xml 
+
+    <postMsg mid="35002000" type="Info"    dynamic="0" navigation="0"  />
+Synthesis options:
+The -a option is MachXO.
+The -s option is 3.
+The -t option is TQFP144.
+The -d option is LCMXO1200C.
+Using package TQFP144.
+Using performance grade 3.
+                                                          
+
+##########################################################
+
+### Lattice Family : MachXO
+
+### Device  : LCMXO1200C
+
+### Package : TQFP144
+
+### Speed   : 3
+
+##########################################################
+
+                                                          
+
+    <postMsg mid="35001781" type="Info"    dynamic="0" navigation="0"  />
+Optimization goal = Balanced
+Top-level module name = top.
+Target frequency = 200.000000 MHz.
+Maximum fanout = 1000.
+Timing path count = 3
+BRAM utilization = 100.000000 %
+DSP usage = true
+DSP utilization = 100.000000 %
+fsm_encoding_style = auto
+resolve_mixed_drivers = 0
+fix_gated_clocks = 1
+
+Mux style = Auto
+Use Carry Chain = true
+carry_chain_length = 0
+Loop Limit = 1950.
+Use IO Insertion = TRUE
+Use IO Reg = AUTO
+
+Resource Sharing = TRUE
+Propagate Constants = TRUE
+Remove Duplicate Registers = TRUE
+force_gsr = auto
+ROM style = auto
+RAM style = auto
+The -comp option is FALSE.
+The -syn option is FALSE.
+-p C:/Users/yahya/Documents/GitHub/EE4951W/verilog - PWM generator/project (searchpath added)
+-p C:/Program Files/lscc/diamond/3.11_x64/ispfpga/mj5g00/data (searchpath added)
+-p C:/Users/yahya/Documents/GitHub/EE4951W/verilog - PWM generator/project/impl1 (searchpath added)
+-p C:/Users/yahya/Documents/GitHub/EE4951W/verilog - PWM generator/project (searchpath added)
+Verilog design file = C:/Users/yahya/Documents/GitHub/EE4951W/verilog - PWM generator/project/top.v
+NGD file = OBC_impl1.ngd
+-sdc option: SDC file input not used.
+-lpf option: Output file option is ON.
+Hardtimer checking is enabled (default). The -dt option is not used.
+The -r option is OFF. [ Remove LOC Properties is OFF. ]
+Technology check ok...
+
+Analyzing Verilog file C:/Program Files/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo.v. VERI-1482
+Compile design.
+Compile Design Begin
+Analyzing Verilog file c:/users/yahya/documents/github/ee4951w/verilog - pwm generator/project/top.v. VERI-1482
+Analyzing Verilog file C:/Program Files/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo.v. VERI-1482
+Top module name (Verilog): top
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="c:/users/yahya/documents/github/ee4951w/verilog - pwm generator/project/top.v(3): " arg1="top" arg2="c:/users/yahya/documents/github/ee4951w/verilog - pwm generator/project/top.v" arg3="3"  />
+    <postMsg mid="35901220" type="Warning" dynamic="2" navigation="2" arg0="c:/users/yahya/documents/github/ee4951w/verilog - pwm generator/project/top.v(9): " arg1="SW" arg2="c:/users/yahya/documents/github/ee4951w/verilog - pwm generator/project/top.v" arg3="9"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="C:/Program Files/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo.v(1372): " arg1="OSCC" arg2="C:/Program Files/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo.v" arg3="1372"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="c:/users/yahya/documents/github/ee4951w/verilog - pwm generator/project/top.v(17): " arg1="PMW" arg2="c:/users/yahya/documents/github/ee4951w/verilog - pwm generator/project/top.v" arg3="17"  />
+Last elaborated design is top()
+Loading NGL library 'C:/Program Files/lscc/diamond/3.11_x64/ispfpga/mj5g00e/data/mj5gelib.ngl'...
+Loading NGL library 'C:/Program Files/lscc/diamond/3.11_x64/ispfpga/mj5g00/data/mj5glib.ngl'...
+Loading NGL library 'C:/Program Files/lscc/diamond/3.11_x64/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/Program Files/lscc/diamond/3.11_x64/ispfpga/or5g00/data/orc5glib.ngl'...
+Loading device for application map from file 'mj5g17x12.nph' in environment: C:/Program Files/lscc/diamond/3.11_x64/ispfpga.
+Package Status:                     Final          Version 1.19.
+Top-level module name = top.
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="gnd"  />
+    <postMsg mid="35002005" type="Warning" dynamic="1" navigation="0" arg0="signal[11]"  />
+    <postMsg mid="35002005" type="Warning" dynamic="1" navigation="0" arg0="signal[10]"  />
+    <postMsg mid="35002005" type="Warning" dynamic="1" navigation="0" arg0="signal[9]"  />
+    <postMsg mid="35002005" type="Warning" dynamic="1" navigation="0" arg0="signal[8]"  />
+    <postMsg mid="35002005" type="Warning" dynamic="1" navigation="0" arg0="signal[7]"  />
+    <postMsg mid="35002005" type="Warning" dynamic="1" navigation="0" arg0="signal[6]"  />
+    <postMsg mid="35002005" type="Warning" dynamic="1" navigation="0" arg0="signal[5]"  />
+    <postMsg mid="35002005" type="Warning" dynamic="1" navigation="0" arg0="signal[4]"  />
+    <postMsg mid="35002005" type="Warning" dynamic="1" navigation="0" arg0="signal[3]"  />
+    <postMsg mid="35002005" type="Warning" dynamic="1" navigation="0" arg0="signal[2]"  />
+    <postMsg mid="35002005" type="Warning" dynamic="1" navigation="0" arg0="signal[1]"  />
+    <postMsg mid="35002005" type="Warning" dynamic="1" navigation="0" arg0="signal[0]"  />
+    <postMsg mid="35002005" type="Warning" dynamic="1" navigation="0" arg0="SPI[2]"  />
+    <postMsg mid="35002005" type="Warning" dynamic="1" navigation="0" arg0="SPI[1]"  />
+    <postMsg mid="35002005" type="Warning" dynamic="1" navigation="0" arg0="SPI[0]"  />
+######## Missing driver on net signal[11]. Patching with GND.
+######## Missing driver on net signal[10]. Patching with GND.
+######## Missing driver on net signal[9]. Patching with GND.
+######## Missing driver on net signal[8]. Patching with GND.
+######## Missing driver on net signal[7]. Patching with GND.
+######## Missing driver on net signal[6]. Patching with GND.
+######## Missing driver on net signal[5]. Patching with GND.
+######## Missing driver on net signal[4]. Patching with GND.
+######## Missing driver on net signal[3]. Patching with GND.
+######## Missing driver on net signal[2]. Patching with GND.
+######## Missing driver on net signal[1]. Patching with GND.
+######## Missing driver on net signal[0]. Patching with GND.
+######## Missing driver on net SPI[2]. Patching with GND.
+######## Missing driver on net SPI[1]. Patching with GND.
+######## Missing driver on net SPI[0]. Patching with GND.
+    <postMsg mid="35001748" type="Warning" dynamic="2" navigation="0" arg0="0" arg1="\Test/dutyCycle"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="7" arg1="\Test/dutyCycle"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="0" arg1="\Test/PMW_PIN"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="1" arg1="\Test/PMW_PIN"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="2" arg1="\Test/PMW_PIN"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="3" arg1="\Test/PMW_PIN"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="4" arg1="\Test/PMW_PIN"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="5" arg1="\Test/PMW_PIN"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="6" arg1="\Test/PMW_PIN"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="7" arg1="\Test/PMW_PIN"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="8" arg1="\Test/PMW_PIN"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="9" arg1="\Test/PMW_PIN"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="10" arg1="\Test/PMW_PIN"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="11" arg1="\Test/PMW_PIN"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="12" arg1="\Test/PMW_PIN"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="13" arg1="\Test/PMW_PIN"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="14" arg1="\Test/PMW_PIN"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="15" arg1="\Test/PMW_PIN"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="16" arg1="\Test/PMW_PIN"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="17" arg1="\Test/PMW_PIN"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="18" arg1="\Test/PMW_PIN"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="19" arg1="\Test/PMW_PIN"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="20" arg1="\Test/PMW_PIN"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="21" arg1="\Test/PMW_PIN"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="22" arg1="\Test/PMW_PIN"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="23" arg1="\Test/PMW_PIN"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="24" arg1="\Test/PMW_PIN"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="25" arg1="\Test/PMW_PIN"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="26" arg1="\Test/PMW_PIN"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="27" arg1="\Test/PMW_PIN"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="28" arg1="\Test/PMW_PIN"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="29" arg1="\Test/PMW_PIN"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="30" arg1="\Test/PMW_PIN"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="31" arg1="\Test/PMW_PIN"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="32" arg1="\Test/PMW_PIN"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="33" arg1="\Test/PMW_PIN"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="34" arg1="\Test/PMW_PIN"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="35" arg1="\Test/PMW_PIN"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="36" arg1="\Test/PMW_PIN"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="37" arg1="\Test/PMW_PIN"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="38" arg1="\Test/PMW_PIN"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="39" arg1="\Test/PMW_PIN"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="40" arg1="\Test/PMW_PIN"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="41" arg1="\Test/PMW_PIN"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="42" arg1="\Test/PMW_PIN"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="43" arg1="\Test/PMW_PIN"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="44" arg1="\Test/PMW_PIN"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="45" arg1="\Test/PMW_PIN"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="46" arg1="\Test/PMW_PIN"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="47" arg1="\Test/PMW_PIN"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="48" arg1="\Test/PMW_PIN"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="49" arg1="\Test/PMW_PIN"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="50" arg1="\Test/PMW_PIN"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="51" arg1="\Test/PMW_PIN"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="52" arg1="\Test/PMW_PIN"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="53" arg1="\Test/PMW_PIN"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="54" arg1="\Test/PMW_PIN"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="55" arg1="\Test/PMW_PIN"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="56" arg1="\Test/PMW_PIN"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="57" arg1="\Test/PMW_PIN"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="58" arg1="\Test/PMW_PIN"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="59" arg1="\Test/PMW_PIN"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="60" arg1="\Test/PMW_PIN"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="61" arg1="\Test/PMW_PIN"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="62" arg1="\Test/PMW_PIN"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="63" arg1="\Test/PMW_PIN"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="64" arg1="\Test/PMW_PIN"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="65" arg1="\Test/PMW_PIN"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="66" arg1="\Test/PMW_PIN"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="67" arg1="\Test/PMW_PIN"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="68" arg1="\Test/PMW_PIN"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="69" arg1="\Test/PMW_PIN"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="70" arg1="\Test/PMW_PIN"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="71" arg1="\Test/PMW_PIN"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="72" arg1="\Test/PMW_PIN"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="73" arg1="\Test/PMW_PIN"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="74" arg1="\Test/PMW_PIN"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="75" arg1="\Test/PMW_PIN"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="76" arg1="\Test/PMW_PIN"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="77" arg1="\Test/PMW_PIN"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="78" arg1="\Test/PMW_PIN"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="79" arg1="\Test/PMW_PIN"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="80" arg1="\Test/PMW_PIN"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="81" arg1="\Test/PMW_PIN"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="82" arg1="\Test/PMW_PIN"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="83" arg1="\Test/PMW_PIN"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="84" arg1="\Test/PMW_PIN"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="85" arg1="\Test/PMW_PIN"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="86" arg1="\Test/PMW_PIN"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="87" arg1="\Test/PMW_PIN"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="88" arg1="\Test/PMW_PIN"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="89" arg1="\Test/PMW_PIN"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="90" arg1="\Test/PMW_PIN"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="91" arg1="\Test/PMW_PIN"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="92" arg1="\Test/PMW_PIN"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="93" arg1="\Test/PMW_PIN"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="94" arg1="\Test/PMW_PIN"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="95" arg1="\Test/PMW_PIN"  />
+
+
+
+GSR will not be inferred because no asynchronous signal was found in the netlist.
+Applying 200.000000 MHz constraint to all clocks
+
+    <postMsg mid="35001611" type="Warning" dynamic="0" navigation="0"  />
+Results of NGD DRC are available in top_drc.log.
+Loading NGL library 'C:/Program Files/lscc/diamond/3.11_x64/ispfpga/mj5g00e/data/mj5gelib.ngl'...
+Loading NGL library 'C:/Program Files/lscc/diamond/3.11_x64/ispfpga/mj5g00/data/mj5glib.ngl'...
+Loading NGL library 'C:/Program Files/lscc/diamond/3.11_x64/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/Program Files/lscc/diamond/3.11_x64/ispfpga/or5g00/data/orc5glib.ngl'...
+
+
+Running DRC...
+
+DRC complete with no errors or warnings
+
+Design Results:
+    115 blocks expanded
+completed the first expansion
+All blocks are expanded and NGD expansion is successful.
+Writing NGD file OBC_impl1.ngd.
+
+################### Begin Area Report (top)######################
+Number of register bits => 0 of 1539 (0 % )
+GSR => 1
+OB => 111
+################### End Area Report ##################
+
+################### Begin BlackBox Report ######################
+TSALL => 1
+################### End BlackBox Report ##################
+
+################### Begin Clock Report ######################
+Clock Nets
+Number of Clocks: 0
+Clock Enable Nets
+Number of Clock Enables: 0
+Top 0 highest fanout Clock Enables:
+Highest fanout non-clock nets
+Top 10 highest fanout non-clock nets:
+  Net : PMW_PIN[0], loads : 0
+  Net : PMW_PIN[1], loads : 0
+  Net : PMW_PIN[2], loads : 0
+  Net : PMW_PIN[3], loads : 0
+  Net : PMW_PIN[4], loads : 0
+  Net : PMW_PIN[5], loads : 0
+  Net : PMW_PIN[6], loads : 0
+  Net : PMW_PIN[7], loads : 0
+  Net : PMW_PIN[8], loads : 0
+  Net : PMW_PIN[9], loads : 0
+################### End Clock Report ##################
+
+Peak Memory Usage: 52.418  MB
+
+--------------------------------------------------------------
+Elapsed CPU time for LSE flow : 0.438  secs
+--------------------------------------------------------------

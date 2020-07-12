@@ -1,0 +1,51 @@
+Loading design for application iotiming from file obc_impl1.ncd.
+Design name: top
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO1200C
+Package:     TQFP144
+Performance: 4
+Package Status:                     Final          Version 1.19.
+Performance Hardware Data Status: Version 1.94.
+Loading design for application iotiming from file obc_impl1.ncd.
+Design name: top
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO1200C
+Package:     TQFP144
+Performance: 5
+Package Status:                     Final          Version 1.19.
+Performance Hardware Data Status: Version 1.94.
+Loading design for application iotiming from file obc_impl1.ncd.
+Design name: top
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO1200C
+Package:     TQFP144
+Performance: M
+Package Status:                     Final          Version 1.19.
+Performance Hardware Data Status: Version 1.94.
+// Design: top
+// Package: TQFP144
+// ncd File: obc_impl1.ncd
+// Version: Diamond (64-bit) 3.11.0.396.4
+// Written on Fri Feb 28 18:17:00 2020
+// M: Minimum Performance Grade
+// iotiming OBC_impl1.ncd OBC_impl1.prf -gui -msgset C:/Users/yahya/Documents/GitHub/EE4951W/verilog - PWM generator/project/promote.xml
+
+I/O Timing Report (All units are in ns)
+
+Worst Case Results across Performance Grades (M, 5, 4, 3):
+
+// Input Setup and Hold Times
+
+Port  Clock Edge  Setup Performance_Grade  Hold Performance_Grade
+----------------------------------------------------------------------
+(no input setup/hold data)
+
+
+// Clock to Output Delay
+
+Port  Clock Edge  Max_Delay Performance_Grade  Min_Delay Performance_Grade
+------------------------------------------------------------------------
+(no clock to output min/max data)

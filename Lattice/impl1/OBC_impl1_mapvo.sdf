@@ -1,0 +1,465 @@
+(DELAYFILE
+  (SDFVERSION "3.0")
+  (DESIGN "top")
+  (DATE "Fri Feb 28 18:08:16 2020")
+  (VENDOR "Lattice")
+  (PROGRAM "ldbanno")
+  (VERSION "Diamond (64-bit) 3.11.0.396.4")
+  (DIVIDER /)
+  (VOLTAGE 1.26:1.20:1.14)
+  (PROCESS "default")
+  (TEMPERATURE -40:25:85)
+  (TIMESCALE 1ps)
+  (CELL
+    (CELLTYPE "PMW_PIN_90_")
+    (INSTANCE PMW_PIN\[90\]_I)
+  )
+  (CELL
+    (CELLTYPE "signal_8_")
+    (INSTANCE signal\[8\]_I)
+  )
+  (CELL
+    (CELLTYPE "signal_9_")
+    (INSTANCE signal\[9\]_I)
+  )
+  (CELL
+    (CELLTYPE "signal_10_")
+    (INSTANCE signal\[10\]_I)
+  )
+  (CELL
+    (CELLTYPE "signal_2_")
+    (INSTANCE signal\[2\]_I)
+  )
+  (CELL
+    (CELLTYPE "PMW_PIN_95_")
+    (INSTANCE PMW_PIN\[95\]_I)
+  )
+  (CELL
+    (CELLTYPE "signal_3_")
+    (INSTANCE signal\[3\]_I)
+  )
+  (CELL
+    (CELLTYPE "SPI_0_")
+    (INSTANCE SPI\[0\]_I)
+  )
+  (CELL
+    (CELLTYPE "signal_4_")
+    (INSTANCE signal\[4\]_I)
+  )
+  (CELL
+    (CELLTYPE "SPI_1_")
+    (INSTANCE SPI\[1\]_I)
+  )
+  (CELL
+    (CELLTYPE "signal_5_")
+    (INSTANCE signal\[5\]_I)
+  )
+  (CELL
+    (CELLTYPE "SPI_2_")
+    (INSTANCE SPI\[2\]_I)
+  )
+  (CELL
+    (CELLTYPE "signal_6_")
+    (INSTANCE signal\[6\]_I)
+  )
+  (CELL
+    (CELLTYPE "signal_0_")
+    (INSTANCE signal\[0\]_I)
+  )
+  (CELL
+    (CELLTYPE "signal_7_")
+    (INSTANCE signal\[7\]_I)
+  )
+  (CELL
+    (CELLTYPE "signal_1_")
+    (INSTANCE signal\[1\]_I)
+  )
+  (CELL
+    (CELLTYPE "PMW_PIN_93_")
+    (INSTANCE PMW_PIN\[93\]_I)
+  )
+  (CELL
+    (CELLTYPE "PMW_PIN_94_")
+    (INSTANCE PMW_PIN\[94\]_I)
+  )
+  (CELL
+    (CELLTYPE "PMW_PIN_1_")
+    (INSTANCE PMW_PIN\[1\]_I)
+  )
+  (CELL
+    (CELLTYPE "PMW_PIN_0_")
+    (INSTANCE PMW_PIN\[0\]_I)
+  )
+  (CELL
+    (CELLTYPE "PMW_PIN_4_")
+    (INSTANCE PMW_PIN\[4\]_I)
+  )
+  (CELL
+    (CELLTYPE "PMW_PIN_3_")
+    (INSTANCE PMW_PIN\[3\]_I)
+  )
+  (CELL
+    (CELLTYPE "PMW_PIN_2_")
+    (INSTANCE PMW_PIN\[2\]_I)
+  )
+  (CELL
+    (CELLTYPE "PMW_PIN_7_")
+    (INSTANCE PMW_PIN\[7\]_I)
+  )
+  (CELL
+    (CELLTYPE "PMW_PIN_6_")
+    (INSTANCE PMW_PIN\[6\]_I)
+  )
+  (CELL
+    (CELLTYPE "PMW_PIN_5_")
+    (INSTANCE PMW_PIN\[5\]_I)
+  )
+  (CELL
+    (CELLTYPE "PMW_PIN_10_")
+    (INSTANCE PMW_PIN\[10\]_I)
+  )
+  (CELL
+    (CELLTYPE "PMW_PIN_9_")
+    (INSTANCE PMW_PIN\[9\]_I)
+  )
+  (CELL
+    (CELLTYPE "PMW_PIN_8_")
+    (INSTANCE PMW_PIN\[8\]_I)
+  )
+  (CELL
+    (CELLTYPE "PMW_PIN_13_")
+    (INSTANCE PMW_PIN\[13\]_I)
+  )
+  (CELL
+    (CELLTYPE "PMW_PIN_12_")
+    (INSTANCE PMW_PIN\[12\]_I)
+  )
+  (CELL
+    (CELLTYPE "PMW_PIN_11_")
+    (INSTANCE PMW_PIN\[11\]_I)
+  )
+  (CELL
+    (CELLTYPE "PMW_PIN_16_")
+    (INSTANCE PMW_PIN\[16\]_I)
+  )
+  (CELL
+    (CELLTYPE "PMW_PIN_15_")
+    (INSTANCE PMW_PIN\[15\]_I)
+  )
+  (CELL
+    (CELLTYPE "PMW_PIN_14_")
+    (INSTANCE PMW_PIN\[14\]_I)
+  )
+  (CELL
+    (CELLTYPE "PMW_PIN_19_")
+    (INSTANCE PMW_PIN\[19\]_I)
+  )
+  (CELL
+    (CELLTYPE "PMW_PIN_18_")
+    (INSTANCE PMW_PIN\[18\]_I)
+  )
+  (CELL
+    (CELLTYPE "PMW_PIN_17_")
+    (INSTANCE PMW_PIN\[17\]_I)
+  )
+  (CELL
+    (CELLTYPE "PMW_PIN_22_")
+    (INSTANCE PMW_PIN\[22\]_I)
+  )
+  (CELL
+    (CELLTYPE "PMW_PIN_21_")
+    (INSTANCE PMW_PIN\[21\]_I)
+  )
+  (CELL
+    (CELLTYPE "PMW_PIN_20_")
+    (INSTANCE PMW_PIN\[20\]_I)
+  )
+  (CELL
+    (CELLTYPE "PMW_PIN_25_")
+    (INSTANCE PMW_PIN\[25\]_I)
+  )
+  (CELL
+    (CELLTYPE "PMW_PIN_24_")
+    (INSTANCE PMW_PIN\[24\]_I)
+  )
+  (CELL
+    (CELLTYPE "PMW_PIN_23_")
+    (INSTANCE PMW_PIN\[23\]_I)
+  )
+  (CELL
+    (CELLTYPE "PMW_PIN_28_")
+    (INSTANCE PMW_PIN\[28\]_I)
+  )
+  (CELL
+    (CELLTYPE "PMW_PIN_27_")
+    (INSTANCE PMW_PIN\[27\]_I)
+  )
+  (CELL
+    (CELLTYPE "PMW_PIN_26_")
+    (INSTANCE PMW_PIN\[26\]_I)
+  )
+  (CELL
+    (CELLTYPE "PMW_PIN_31_")
+    (INSTANCE PMW_PIN\[31\]_I)
+  )
+  (CELL
+    (CELLTYPE "PMW_PIN_30_")
+    (INSTANCE PMW_PIN\[30\]_I)
+  )
+  (CELL
+    (CELLTYPE "PMW_PIN_29_")
+    (INSTANCE PMW_PIN\[29\]_I)
+  )
+  (CELL
+    (CELLTYPE "PMW_PIN_34_")
+    (INSTANCE PMW_PIN\[34\]_I)
+  )
+  (CELL
+    (CELLTYPE "PMW_PIN_33_")
+    (INSTANCE PMW_PIN\[33\]_I)
+  )
+  (CELL
+    (CELLTYPE "PMW_PIN_32_")
+    (INSTANCE PMW_PIN\[32\]_I)
+  )
+  (CELL
+    (CELLTYPE "PMW_PIN_37_")
+    (INSTANCE PMW_PIN\[37\]_I)
+  )
+  (CELL
+    (CELLTYPE "PMW_PIN_36_")
+    (INSTANCE PMW_PIN\[36\]_I)
+  )
+  (CELL
+    (CELLTYPE "PMW_PIN_35_")
+    (INSTANCE PMW_PIN\[35\]_I)
+  )
+  (CELL
+    (CELLTYPE "PMW_PIN_40_")
+    (INSTANCE PMW_PIN\[40\]_I)
+  )
+  (CELL
+    (CELLTYPE "PMW_PIN_39_")
+    (INSTANCE PMW_PIN\[39\]_I)
+  )
+  (CELL
+    (CELLTYPE "PMW_PIN_38_")
+    (INSTANCE PMW_PIN\[38\]_I)
+  )
+  (CELL
+    (CELLTYPE "PMW_PIN_43_")
+    (INSTANCE PMW_PIN\[43\]_I)
+  )
+  (CELL
+    (CELLTYPE "PMW_PIN_42_")
+    (INSTANCE PMW_PIN\[42\]_I)
+  )
+  (CELL
+    (CELLTYPE "PMW_PIN_41_")
+    (INSTANCE PMW_PIN\[41\]_I)
+  )
+  (CELL
+    (CELLTYPE "PMW_PIN_46_")
+    (INSTANCE PMW_PIN\[46\]_I)
+  )
+  (CELL
+    (CELLTYPE "PMW_PIN_45_")
+    (INSTANCE PMW_PIN\[45\]_I)
+  )
+  (CELL
+    (CELLTYPE "PMW_PIN_44_")
+    (INSTANCE PMW_PIN\[44\]_I)
+  )
+  (CELL
+    (CELLTYPE "PMW_PIN_49_")
+    (INSTANCE PMW_PIN\[49\]_I)
+  )
+  (CELL
+    (CELLTYPE "PMW_PIN_48_")
+    (INSTANCE PMW_PIN\[48\]_I)
+  )
+  (CELL
+    (CELLTYPE "PMW_PIN_47_")
+    (INSTANCE PMW_PIN\[47\]_I)
+  )
+  (CELL
+    (CELLTYPE "PMW_PIN_52_")
+    (INSTANCE PMW_PIN\[52\]_I)
+  )
+  (CELL
+    (CELLTYPE "PMW_PIN_51_")
+    (INSTANCE PMW_PIN\[51\]_I)
+  )
+  (CELL
+    (CELLTYPE "PMW_PIN_50_")
+    (INSTANCE PMW_PIN\[50\]_I)
+  )
+  (CELL
+    (CELLTYPE "PMW_PIN_55_")
+    (INSTANCE PMW_PIN\[55\]_I)
+  )
+  (CELL
+    (CELLTYPE "PMW_PIN_54_")
+    (INSTANCE PMW_PIN\[54\]_I)
+  )
+  (CELL
+    (CELLTYPE "PMW_PIN_53_")
+    (INSTANCE PMW_PIN\[53\]_I)
+  )
+  (CELL
+    (CELLTYPE "PMW_PIN_58_")
+    (INSTANCE PMW_PIN\[58\]_I)
+  )
+  (CELL
+    (CELLTYPE "PMW_PIN_57_")
+    (INSTANCE PMW_PIN\[57\]_I)
+  )
+  (CELL
+    (CELLTYPE "PMW_PIN_56_")
+    (INSTANCE PMW_PIN\[56\]_I)
+  )
+  (CELL
+    (CELLTYPE "PMW_PIN_61_")
+    (INSTANCE PMW_PIN\[61\]_I)
+  )
+  (CELL
+    (CELLTYPE "PMW_PIN_60_")
+    (INSTANCE PMW_PIN\[60\]_I)
+  )
+  (CELL
+    (CELLTYPE "PMW_PIN_59_")
+    (INSTANCE PMW_PIN\[59\]_I)
+  )
+  (CELL
+    (CELLTYPE "PMW_PIN_64_")
+    (INSTANCE PMW_PIN\[64\]_I)
+  )
+  (CELL
+    (CELLTYPE "PMW_PIN_63_")
+    (INSTANCE PMW_PIN\[63\]_I)
+  )
+  (CELL
+    (CELLTYPE "PMW_PIN_62_")
+    (INSTANCE PMW_PIN\[62\]_I)
+  )
+  (CELL
+    (CELLTYPE "PMW_PIN_67_")
+    (INSTANCE PMW_PIN\[67\]_I)
+  )
+  (CELL
+    (CELLTYPE "PMW_PIN_66_")
+    (INSTANCE PMW_PIN\[66\]_I)
+  )
+  (CELL
+    (CELLTYPE "PMW_PIN_65_")
+    (INSTANCE PMW_PIN\[65\]_I)
+  )
+  (CELL
+    (CELLTYPE "PMW_PIN_70_")
+    (INSTANCE PMW_PIN\[70\]_I)
+  )
+  (CELL
+    (CELLTYPE "PMW_PIN_69_")
+    (INSTANCE PMW_PIN\[69\]_I)
+  )
+  (CELL
+    (CELLTYPE "PMW_PIN_68_")
+    (INSTANCE PMW_PIN\[68\]_I)
+  )
+  (CELL
+    (CELLTYPE "PMW_PIN_73_")
+    (INSTANCE PMW_PIN\[73\]_I)
+  )
+  (CELL
+    (CELLTYPE "PMW_PIN_72_")
+    (INSTANCE PMW_PIN\[72\]_I)
+  )
+  (CELL
+    (CELLTYPE "PMW_PIN_71_")
+    (INSTANCE PMW_PIN\[71\]_I)
+  )
+  (CELL
+    (CELLTYPE "PMW_PIN_76_")
+    (INSTANCE PMW_PIN\[76\]_I)
+  )
+  (CELL
+    (CELLTYPE "PMW_PIN_75_")
+    (INSTANCE PMW_PIN\[75\]_I)
+  )
+  (CELL
+    (CELLTYPE "PMW_PIN_74_")
+    (INSTANCE PMW_PIN\[74\]_I)
+  )
+  (CELL
+    (CELLTYPE "PMW_PIN_79_")
+    (INSTANCE PMW_PIN\[79\]_I)
+  )
+  (CELL
+    (CELLTYPE "PMW_PIN_78_")
+    (INSTANCE PMW_PIN\[78\]_I)
+  )
+  (CELL
+    (CELLTYPE "PMW_PIN_77_")
+    (INSTANCE PMW_PIN\[77\]_I)
+  )
+  (CELL
+    (CELLTYPE "PMW_PIN_82_")
+    (INSTANCE PMW_PIN\[82\]_I)
+  )
+  (CELL
+    (CELLTYPE "PMW_PIN_81_")
+    (INSTANCE PMW_PIN\[81\]_I)
+  )
+  (CELL
+    (CELLTYPE "PMW_PIN_80_")
+    (INSTANCE PMW_PIN\[80\]_I)
+  )
+  (CELL
+    (CELLTYPE "PMW_PIN_85_")
+    (INSTANCE PMW_PIN\[85\]_I)
+  )
+  (CELL
+    (CELLTYPE "PMW_PIN_84_")
+    (INSTANCE PMW_PIN\[84\]_I)
+  )
+  (CELL
+    (CELLTYPE "PMW_PIN_83_")
+    (INSTANCE PMW_PIN\[83\]_I)
+  )
+  (CELL
+    (CELLTYPE "PMW_PIN_91_")
+    (INSTANCE PMW_PIN\[91\]_I)
+  )
+  (CELL
+    (CELLTYPE "PMW_PIN_92_")
+    (INSTANCE PMW_PIN\[92\]_I)
+  )
+  (CELL
+    (CELLTYPE "signal_11_")
+    (INSTANCE signal\[11\]_I)
+  )
+  (CELL
+    (CELLTYPE "PMW_PIN_89_")
+    (INSTANCE PMW_PIN\[89\]_I)
+  )
+  (CELL
+    (CELLTYPE "PMW_PIN_88_")
+    (INSTANCE PMW_PIN\[88\]_I)
+  )
+  (CELL
+    (CELLTYPE "PMW_PIN_87_")
+    (INSTANCE PMW_PIN\[87\]_I)
+  )
+  (CELL
+    (CELLTYPE "PMW_PIN_86_")
+    (INSTANCE PMW_PIN\[86\]_I)
+  )
+  (CELL
+    (CELLTYPE "top")
+    (INSTANCE )
+    (DELAY
+      (ABSOLUTE
+      )
+    )
+  )
+)
